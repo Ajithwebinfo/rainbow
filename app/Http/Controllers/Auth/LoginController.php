@@ -4,7 +4,11 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+
+use App\Classes\DBUtilities;
+
 
 class LoginController extends Controller
 {
@@ -17,11 +21,10 @@ class LoginController extends Controller
 
     public function login(){
         $currentRouteName   =   Route::current()->getName();
+        $menuData           =   DBUtilities::menuModel($currentRouteName);
 
-       // $menuData   =
+        $param              =   ['menuData'=>$menuData];
 
-
-
-        //return view('auth.login');
+        return view('auth.login', $param);
     }
 }
