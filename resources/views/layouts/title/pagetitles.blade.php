@@ -1,0 +1,1 @@
+<title>{{$pageTitles}}</title>

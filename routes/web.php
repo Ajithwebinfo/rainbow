@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::any('login', 'Auth\LoginController@login')->name('login');
