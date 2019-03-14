@@ -23,18 +23,21 @@
 
 
     <section id="wrapper">
-        <div class="login-register" style="background-image:url(../assets/images/background/login-register.jpg);">
+        <div class="login-register" style="background-image:url(public/assets/images/background/login-register.jpg);">
             <div class="login-box card">
                 <div class="card-body">
-                    <form class="form-horizontal form-material" id="loginform" action="index.html">
+                    {{ Form::open(array('url' => 'handleLogin','class'=>'form-horizontal form-material','id'=>'loginform'))  }}
+
                         <h3 class="box-title m-b-20 text-center">Sign In</h3>
                         <div class="form-group ">
                             <div class="col-xs-12">
-                                <input class="form-control" type="text" required="" placeholder="Username"> </div>
+                                {{ Form::text('username', '', ['id' => 'username','class'=>'form-control p-0 username','placeholder'=>'Username']) }}
+                            </div>
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12">
-                                <input class="form-control" type="password" required="" placeholder="Password"> </div>
+                                <input class="form-control password" id="password" type="password" required="" placeholder="Password">
+                            </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-12 font-14">
@@ -61,7 +64,7 @@
                                 <div>Don't have an account? <a href="pages-register.html" class="text-info m-l-5"><b>Sign Up</b></a></div>
                             </div>
                         </div>--}}
-                    </form>
+                    {{Form::close()}}
                     <form class="form-horizontal" id="recoverform" action="index.html">
                         <div class="form-group ">
                             <div class="col-xs-12">

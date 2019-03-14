@@ -17,4 +17,8 @@ class DBUtilities{
 
     }
 
+    public static function getUserDetails($username, $password){
+        
+    }
+
 }

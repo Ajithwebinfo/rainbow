@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 
 Route::any('login', 'Auth\LoginController@login')->name('login');
+Route::any('handleLogin', 'Auth\LoginController@handleLogin')->name('handleLogin');
