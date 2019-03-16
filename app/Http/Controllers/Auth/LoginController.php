@@ -34,6 +34,7 @@ class LoginController extends Controller
     }
 
     public function handleLogin(Request $request){
+
         $username   =   $request->username;
         $password   =   $request->password;
 
