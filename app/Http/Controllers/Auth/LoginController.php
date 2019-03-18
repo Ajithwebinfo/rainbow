@@ -34,10 +34,23 @@ class LoginController extends Controller
     }
 
     public function handleLogin(Request $request){
+
+
+
         $username   =   $request->username;
         $password   =   $request->password;
 
+
+
         $userDetails    =   DBUtilities::getUserDetails($username, $password);
+
+        if($userDetails['status']=="error"){
+
+        }
+        else{
+
+
+        }
 
 
     }
