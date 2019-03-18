@@ -36,7 +36,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12">
-                                <input class="form-control password" id="password" type="password" required="" placeholder="Password">
+                                <input class="form-control password" id="password" name="password" type="password" required="" placeholder="Password">
                             </div>
                         </div>
                         <div class="form-group row">
