@@ -11,6 +11,8 @@
       <change beforePath="$PROJECT_DIR$/../logezy.com/packages/companylogezy/webapplication/src/views/master/booking/booking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../logezy.com/packages/companylogezy/webapplication/src/views/master/booking/booking.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../logezy.com/public/assets_logezy/admin/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../logezy.com/public/assets_logezy/admin/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../logezy.com/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/../logezy.com/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Classes/DBUtilities.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/DBUtilities.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/navigation/user/side_nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navigation/user/side_nav.blade.php" afterDir="false" />
     </list>
     <ignored path=".idea/" />
@@ -34,20 +36,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/navigation/user/side_nav.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="416">
+              <caret line="16" column="91" selection-start-line="16" selection-start-column="91" selection-end-line="16" selection-end-column="91" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/header/title/pagetitles.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+            <state relative-caret-position="432">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
               <folding>
                 <element signature="e#45#81#0#PHP" expanded="true" />
               </folding>
@@ -67,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Classes/DBUtilities.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+            <state relative-caret-position="326">
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
               <folding>
                 <element signature="e#31#69#0#PHP" expanded="true" />
               </folding>
@@ -155,9 +162,9 @@
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/footer/js/scripts.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/navigation/user/side_nav.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" />
         <option value="$PROJECT_DIR$/app/Classes/DBUtilities.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/navigation/user/side_nav.blade.php" />
       </list>
     </option>
   </component>
@@ -319,6 +326,30 @@
             </path>
             <path>
               <item name="rainbow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rainbow" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rainbow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rainbow" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rainbow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rainbow" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
+              <item name="title" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rainbow" type="b2602c69:ProjectViewProjectNode" />
               <item name="Admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -374,12 +405,12 @@
       <workItem from="1552640817943" duration="11034000" />
       <workItem from="1552652933641" duration="12769000" />
       <workItem from="1552899599034" duration="17004000" />
-      <workItem from="1552987658143" duration="19248000" />
+      <workItem from="1552987658143" duration="19538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67818000" />
+    <option name="totallyTimeSpent" value="68108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -510,9 +541,6 @@
           <caret line="26" column="10" selection-start-line="9" selection-end-line="26" selection-end-column="10" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/header/title/pagetitles.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../lead/app/Http/Controllers/Admin/AgencyController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -735,25 +763,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/UserController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/navigation/user/side_nav.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-          <folding>
-            <element signature="e#45#81#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="416">
+          <caret line="16" column="91" selection-start-line="16" selection-start-column="91" selection-end-line="16" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Classes/DBUtilities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
-          <folding>
-            <element signature="e#31#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/header/title/pagetitles.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -765,10 +783,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/navigation/user/side_nav.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="432">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <element signature="e#45#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classes/DBUtilities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding>
+            <element signature="e#31#69#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

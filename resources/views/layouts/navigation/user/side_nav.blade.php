@@ -14,7 +14,7 @@
             @foreach($menuFull as $index=> $menu)
                 <li @if (Request::path() == $menu['current_route_name']) class="active"  @endif>
                     <a href="../{{$menu['current_route_name']}}" >
-                        <i class="mdi mdi-gauge"></i><span class="hide-menu">{{$menu['page_title']}}</span>
+                        <i class="mdi mdi-gauge"></i><span class="hide-menu">{{$menu['title']}}</span>
                     </a>
                 </li>
             @endforeach

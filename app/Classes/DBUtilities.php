@@ -33,7 +33,8 @@ class DBUtilities{
         }
     }
     public static function menuModel($idRoles, $currentPath){
-        $data   =   MenuModels::where('id_roles','=',$idRoles)->where('current_route_name','=',$currentPath)->first();
+        $data   =   MenuModels::where('id_roles','=',$idRoles)
+            ->where('current_route_namez','LIKE','%'.$currentPath.'%')->first();
         return $data;
 
     }

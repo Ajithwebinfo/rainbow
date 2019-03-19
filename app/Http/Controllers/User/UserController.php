@@ -34,6 +34,7 @@ class UserController extends Controller
         $userDetails        =   DBUtilities::getUserDetails($idUserDetails);
         $param              =   ['menuData'=>$menuData,'userDetails'=>$userDetails, 'menuFull'=>$menuFullData];
 
+        dd($menuData);
 
         if(!empty($userDetails)){
             return view('users.dashboard', $param);
