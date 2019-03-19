@@ -18,11 +18,12 @@
 
 </head>
 
-@include('layouts.content.content')
+@include('layouts.contents.contents')
 
 
 
 
 
 
+@include('layouts.footer.js.scripts')
 @include('layouts.footer.footer')

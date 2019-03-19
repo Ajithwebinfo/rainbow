@@ -88,5 +88,7 @@
     <orderEntry type="module" module-name="theme" />
     <orderEntry type="module" module-name="logezy.com" />
     <orderEntry type="module" module-name="blog1" />
+    <orderEntry type="module" module-name="lead" />
+    <orderEntry type="module" module-name="Admin" />
   </component>
 </module>

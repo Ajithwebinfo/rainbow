@@ -18,3 +18,8 @@ Route::get('/', function () {
 
 Route::any('login', 'Auth\LoginController@login')->name('login');
 Route::any('handleLogin', 'Auth\LoginController@handleLogin')->name('handleLogin');
+
+
+Route::any('user/dashboard', 'User\UserController@dashboard')->name('userDashboard')->middleware('validuser');
+
+

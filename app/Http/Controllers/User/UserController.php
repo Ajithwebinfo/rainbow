@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -16,57 +16,33 @@ use App\Classes\DBUtilities;
 
 class UserController extends Controller
 {
-
+    public  $idUserDetails;
 
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+
     }
 
-    public function dashboard(){
-        $currentRouteName   =   Route::current()->getName();
-        $menuData           =   DBUtilities::menuModel($currentRouteName);
-
-        $param              =   ['menuData'=>$menuData];
-
-        dd($param);
-
-
-        return view('auth.login', $param);
-    }
-
-    public function handleLogin(Request $request){
+    public function dashboard(Request $request){
+        //$currentRouteName   =   Route::current()->getName();
+        $currentPath        =   $request->getPathInfo();
+        $idUserDetails      =   Session::get('users.idUserDetails')[0];
+        $idRole             =   Session::get('users.idRoles')[0];
+        $menuData           =   DBUtilities::menuModel($idRole, $currentPath);
+        $menuFullData       =   DBUtilities::getFullMenu($idRole);
+        $userDetails        =   DBUtilities::getUserDetails($idUserDetails);
+        $param              =   ['menuData'=>$menuData,'userDetails'=>$userDetails, 'menuFull'=>$menuFullData];
 
 
-
-        $username   =   $request->username;
-        $password   =   $request->password;
-
-
-
-        $userDetails    =   DBUtilities::handleLogin($username, $password);
-
-        if($userDetails['status']=="error"){
-
+        if(!empty($userDetails)){
+            return view('users.dashboard', $param);
         }
         else{
-            $idUser         =   $userDetails['userData']->id_user;
-            $idUserType     =   $userDetails['userData']->id_user_type;
-            $request->session()->push('users.idUser', $idUser);
-            $request->session()->push('users.idUserType', $idUserType);
-
-
-            switch($idUserType){
-                case 1:
-                    break;
-                case 2:
-                    return view('users.dashboard');
-                    break;
-            }
-
-
+            return Redirect::route('login');
         }
 
-
     }
+
+
 }
