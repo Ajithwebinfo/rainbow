@@ -12,7 +12,7 @@
         <ul id="sidebarnav">
             <li class="nav-devider"></li>
             @foreach($menuFull as $index=> $menu)
-                <li>
+                <li @if (Request::path() == $menu['current_route_name']) class="active"  @endif>
                     <a href="../{{$menu['current_route_name']}}" >
                         <i class="mdi mdi-gauge"></i><span class="hide-menu">{{$menu['page_title']}}</span>
                     </a>
