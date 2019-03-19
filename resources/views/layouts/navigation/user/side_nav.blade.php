@@ -17,8 +17,6 @@
                         <i class="mdi mdi-gauge"></i><span class="hide-menu">{{$menu['page_title']}}</span>
                     </a>
                 </li>
-
-
             @endforeach
 
 
