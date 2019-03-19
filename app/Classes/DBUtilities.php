@@ -22,8 +22,11 @@ class DBUtilities{
 
     }
 
-    public static function getUserDetails($username, $password){
-        $data  =   UserModel::where('username','=',$username)->first();
+    public static function handleLogin($username, $password){
+        $data  =   UserModel::where('username','=',$username)
+            ->leftJoin('users_info as ui','ui.id_user_info','=','users.id_user_info')
+            ->select('users.username','users.passwprd','ui.id_user_type')
+            ->first();
 
         //echo $username."--".$password;
 
@@ -37,6 +40,8 @@ class DBUtilities{
             if(Hash::check($password, $passwordExist)){
                 $status     =   "success";
                 $msgString  =   "";
+
+                return ['status'=>$status, 'msg'=>$msgString, 'userData'=>$data];
             }
             else{
                 $status     =   "error";
