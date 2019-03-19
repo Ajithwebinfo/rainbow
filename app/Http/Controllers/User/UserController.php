@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Session;
 use App\Classes\DBUtilities;
 
 
-class LoginController extends Controller
+class UserController extends Controller
 {
 
 
@@ -23,11 +23,13 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function login(){
+    public function dashboard(){
         $currentRouteName   =   Route::current()->getName();
         $menuData           =   DBUtilities::menuModel($currentRouteName);
 
         $param              =   ['menuData'=>$menuData];
+
+        dd($param);
 
 
         return view('auth.login', $param);
@@ -43,11 +45,8 @@ class LoginController extends Controller
 
 
         $userDetails    =   DBUtilities::handleLogin($username, $password);
-        //dd($userDetails['status']);
 
         if($userDetails['status']=="error"){
-
-            echo "ds";
 
         }
         else{
@@ -55,8 +54,6 @@ class LoginController extends Controller
             $idUserType     =   $userDetails['userData']->id_user_type;
             $request->session()->push('users.idUser', $idUser);
             $request->session()->push('users.idUserType', $idUserType);
-
-            dd($idUserType);
 
 
             switch($idUserType){
