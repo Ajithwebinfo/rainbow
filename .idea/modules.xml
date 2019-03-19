@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../blog1/.idea/blog1.iml" filepath="$PROJECT_DIR$/../blog1/.idea/blog1.iml" />
       <module fileurl="file://$PROJECT_DIR$/../logezy.com/.idea/logezy.com.iml" filepath="$PROJECT_DIR$/../logezy.com/.idea/logezy.com.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/rainbow.iml" filepath="$PROJECT_DIR$/.idea/rainbow.iml" />
       <module fileurl="file://$PROJECT_DIR$/../theme/.idea/theme.iml" filepath="$PROJECT_DIR$/../theme/.idea/theme.iml" />
